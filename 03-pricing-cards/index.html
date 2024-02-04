@@ -5,133 +5,79 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  < <link href="/css/output.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Red+Hat+Display:wght@400;500;700&display=swap');
+  <link href="/css/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Red+Hat+Display:wght@400;500;700&display=swap');
 
-      * {
-        font-family: 'Red Hat Display', sans-serif;
-      }
-
-      .btn-blue:hover {
-      background-color: #3a4d99;
-      border-color: #3a4d99;
+    * {
+      font-family: 'Red Hat Display', sans-serif;
     }
-
-    .btn-green:hover {
-      background-color: #2e7d32;
-      border-color: #2e7d32;
-    }
-
-    .btn-purple:hover {
-      background-color: #6a1b9a;
-      border-color: #6a1b9a;
-    }
-
-    </style>
-    <title>Pricing Cards</title>
+  </style>
+  <title>Pricing Cards</title>
 </head>
 
 <body class="bg-gray-100">
-  <!-- Global Container -->
-  <div class="flex items-center justify-center min-h-screen">
-    <!-- Inner Container -->
-    <div class="grid grid-cols-1 gap-6 p-6 mx-auto bg-white rounded-lg md:grid-cols-3 md:max-w-3xl lg:max-w-5xl">
-      <!-- Plan 1 -->
-      <div class="bg-blue-500 rounded-lg shadow-lg text-white transition duration-300 transform hover:scale-105">
-        <!-- Upper Container -->
-        <div class="p-8 text-center">
-          <div class="text-lg font-semibold">Starter Plan</div>
-          <h2 class="mt-4 text-4xl font-bold">100GB</h2>
-          <p class="mt-2 text-lg">$1.99/Month</p>
-        </div>
-
-        <!-- Border -->
-        <div class="border-t border-blue-600"></div>
-
-        <!-- Lower Container -->
-        <div class="p-8">
-          <!-- List Container -->
-          <ul class="text-sm list-disc list-inside">
-            <!-- List Item 1 -->
-            <li>100 GB of storage</li>
-            <!-- List Item 2 -->
-            <li>Option to add members</li>
-            <!-- List Item 3 -->
-            <li>Extra member benefits</li>
-          </ul>
-
-          <!-- Call to Action -->
-          <div class="mt-6 text-center">
-            <a href="#" class="btn-blue transition duration-300 hover:bg-blue-700 hover:border-blue-700">Subscribe Now</a>
-          </div>
-        </div>
+  <div class="container mx-auto flex flex-col lg:flex-row justify-center items-center my-48">
+    <div class="flex flex-col max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-4 mx-2 hover:shadow-2xl transition duration-500 w-[340px]">
+      <h2 class="text-gray-800 text-3xl font-semibold">Basic Plan</h2>
+      <div class="mt-2 text-gray-600 min-h-[240px]">
+        <ul class="list-disc list-inside">
+          <li>Basic Feature 1</li>
+          <li>Basic Feature 2</li>
+          <li>Basic Feature 3</li>
+          <li>24/7 Email Support</li>
+          <li>Access to Basic Templates</li>
+        </ul>
       </div>
-
-      <!-- Plan 2 -->
-      <div class="bg-green-500 rounded-lg shadow-lg text-white transition duration-300 transform hover:scale-105">
-        <!-- Upper Container -->
-        <div class="p-8 text-center">
-          <div class="text-lg font-semibold">Standard Plan</div>
-          <h2 class="mt-4 text-4xl font-bold">200GB</h2>
-          <p class="mt-2 text-lg">$3.99/Month</p>
-        </div>
-
-        <!-- Border -->
-        <div class="border-t border-green-600"></div>
-
-        <!-- Lower Container -->
-        <div class="p-8">
-          <!-- List Container -->
-          <ul class="text-sm list-disc list-inside">
-            <!-- List Item 1 -->
-            <li>200 GB of storage</li>
-            <!-- List Item 2 -->
-            <li>Option to add members</li>
-            <!-- List Item 3 -->
-            <li>Extra member benefits</li>
-          </ul>
-
-          <!-- Call to Action -->
-          <div class="mt-6 text-center">
-            <a href="#" class="btn-green transition duration-300 hover:bg-green-700 hover:border-green-700">Subscribe Now</a>
-          </div>
-        </div>
+      <div class="flex justify-end mt-4">
+        <a href="#" class="text-xl font-medium text-indigo-500">₺500</a>
       </div>
-
-      <!-- Plan 3 -->
-      <div class="bg-purple-500 rounded-lg shadow-lg text-white transition duration-300 transform hover:scale-105">
-        <!-- Upper Container -->
-        <div class="p-8 text-center">
-          <div class="text-lg font-semibold">Premium Plan</div>
-          <h2 class="mt-4 text-4xl font-bold">2 TB</h2>
-          <p class="mt-2 text-lg">$8.99/Month</p>
-        </div>
-
-        <!-- Border -->
-        <div class="border-t border-purple-600"></div>
-
-        <!-- Lower Container -->
-        <div class="p-8">
-          <!-- List Container -->
-          <ul class="text-sm list-disc list-inside">
-            <!-- List Item 1 -->
-            <li>2 TB of storage</li>
-            <!-- List Item 2 -->
-            <li>Option to add members</li>
-            <!-- List Item 3 -->
-            <li>Extra member benefits</li>
-          </ul>
-
-          <!-- Call to Action -->
-          <div class="mt-6 text-center">
-            <a href="#" class="btn-purple transition duration-300 hover:bg-purple-700 hover:border-purple-700">Subscribe Now</a>
-          </div>
-        </div>
+      <button class="mt-5 w-full px-4 py-2 rounded text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none">Purchase Now</button>
+    </div>
+  
+    <div class="flex flex-col max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-4 mx-2 overflow-visible relative hover:shadow-2xl transition duration-500 w-[340px]">
+      <div class="absolute -top-[8px] left-1/2 inline-flex rounded-full px-2 py-1 bg-indigo-500 text-white uppercase text-xs transform -translate-x-1/2">
+        Recommended
       </div>
+      <h2 class="text-gray-800 text-3xl font-semibold">Pro Plan</h2>
+      <div class="mt-2 text-gray-600 min-h-[240px]">
+        <ul class="list-disc list-inside">
+          <li>Pro Feature 1</li>
+          <li>Pro Feature 2</li>
+          <li>Priority Customer Support</li>
+          <li>Daily Backup Service</li>
+          <li>Access to Pro Templates</li>
+          <li>Advanced Analytics</li>
+          <li>30-Day Money Back Guarantee</li>
+        </ul>
+      </div>
+      <div class="flex justify-end mt-4">
+        <a href="#" class="text-xl font-medium text-indigo-500">₺1000</a>
+      </div>
+      <button class="mt-5 w-full px-4 py-2 rounded text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none">Purchase Now</button>
+    </div>
+  
+    <div class="flex flex-col max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-4 mx-2 hover:shadow-2xl transition duration-500 w-[340px]">
+      <h2 class="text-gray-800 text-3xl font-semibold">Premium Plan</h2>
+      <div class="mt-2 text-gray-600 min-h-[240px]">
+        <ul class="list-disc list-inside">
+          <li>Premium Feature 1</li>
+          <li>Premium Feature 2</li>
+          <li>Access to Pro and Premium Templates</li>
+          <li>Personal Consultancy Service</li>
+          <li>Security Analysis Service</li>
+          <li>Free Training Courses</li>
+          <li>Priority Email and Phone Support</li>
+          <li>Custom Development Assistance</li>
+        </ul>
+      </div>
+      <div class="flex justify-end mt-4">
+        <a href="#" class="text-xl font-medium text-indigo-500">₺1500</a>
+      </div>
+      <button class="mt-5 w-full px-4 py-2 rounded text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none">Purchase Now</button>
     </div>
   </div>
 </body>
